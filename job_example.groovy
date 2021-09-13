@@ -6,6 +6,8 @@ job('dsl-to-start') {
       description('')
       trim(false)
     }
+    booleanParam('FLAG', true)
+    choiceParam('OPTION', ['option 1 (default)', 'option 2', 'option 3'])
   }
   steps {
     shell('echo "Hello"')
