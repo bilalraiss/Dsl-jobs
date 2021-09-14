@@ -10,6 +10,6 @@ job('dsl-to-start') {
     choiceParam('OPTION', ['option 1 (default)', 'option 2', 'option 3'])
   }
   steps {
-    shell('echo "Hello"')
+    shell('echo "Hello world")
   }
 }
